@@ -1,0 +1,46 @@
+.container {
+    padding: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  @media (min-width: 600px) {
+    .form-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .full-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1 / -1;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 4px;
+  }
+  
+  .button {
+    padding: 12px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:disabled {
+    background-color: #9fa8da;
+  }
+  
+  .button:enabled:hover {
+    background-color: #303f9f;
+  }
